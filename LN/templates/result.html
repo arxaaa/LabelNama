@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download File</title>
+</head>
+<body>
+     <h1>File berhasil di-generate</h1>
+         {% for file_url in file_urls %}
+            <a href="{{ file_url }}" target="blank">Buka File {{ loop.index }}</a><br>
+         {% endfor %}
+    <h2>Gabungan Semua Nama</h2>
+    <a href="{{ combined_all_url }}" target="blank">Buka File Gabungan</a>
+</body>
+</html>
